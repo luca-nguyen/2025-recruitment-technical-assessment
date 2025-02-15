@@ -16,7 +16,7 @@ function App() {
 
 function BuildingsLayout() {
   return (
-    <div className="grid grid-cols-1 bg-transparent px-5 py-2 w-full gap-3 xs:grid-cols-2 xl:grid-cols-5 auto-rows-fr overflow-y-auto">
+    <div className="grid grid-cols-1 bg-transparent px-5 py-2 w-full gap-3 xs:grid-cols-2 lg:grid-cols-5 auto-rows-fr overflow-y-auto">
       {buildingsData.map((building) => (
         <Building
           key={building.name}
@@ -71,7 +71,7 @@ function Building({
       <div className="absolute inset-0 bg-black/35 xs:bg-black/0 group-hover:bg-theme/30 transition-colors rounded-lg" />
       <div className="relative flex items-center flex-row xs:flex-col h-full w-full p-3 justify-between">
         {/* Room Availability */}
-        <div className="order-last s:order-first flex items-center justify-center w-20 xs:w-2/5 h-8 bg-white rounded-xl px-2 gap-2 ml-auto">
+        <div className="order-last s:order-first flex items-center justify-center w-20 xs:w-1/2 h-8 bg-white rounded-xl px-1 gap-2 ml-auto">
           <svg
             className="fill-available"
             xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ function Building({
             <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path>
           </svg>
 
-          <span className="text-xs font-semibold">
+          <span className="text-[12px] font-semibold">
             {xsViewport
               ? `${roomsAvailable}/${roomsAvailable}`
               : `${roomsAvailable} rooms available`}
