@@ -3,7 +3,6 @@ import HeaderBtn from "./HeaderBtn";
 
 function Header() {
   const [closed, setClosed] = useState(false);
-
   function handleClick() {
     setClosed(!closed);
   }
@@ -19,10 +18,7 @@ function Header() {
         ) : (
           <img className="h-11" src="/assets/freeRoomsLogo.png" />
         )}
-        <h1
-          className="font-josefin transition-all text-3xl font-semibold text-theme sm:block hidden"
-          //   style={{ fontFamily: "'Josefin Sans', sans-serif" }}
-        >
+        <h1 className="font-josefin transition-all text-3xl font-semibold text-theme sm:block hidden">
           Freerooms
         </h1>
       </span>

@@ -103,6 +103,7 @@ function Building({
 function SearchContainer() {
   return (
     <div className="grid grid-cols-[140px_2fr_140px] h-15 bg-transparent px-5 pt-1 items-center gap-12">
+      {/* Filters Button */}
       <div className="justify-self-start">
         <button className="flex items-center justify-center h-[50px] w-[150px] border-2 border-theme rounded-lg p-1 cursor-pointer">
           <svg
@@ -114,9 +115,11 @@ function SearchContainer() {
           <span className="text-theme font-bold text-lg">Filters</span>
         </button>
       </div>
+      {/* Search Bar */}
       <div className="flex items-center justify-self-center w-full max-w-2xl">
         <SearchBar />
       </div>
+      {/* Sort Button */}
       <div className="justify-self-end">
         <button className="flex items-center justify-center h-[50px] w-[150px] border-2 border-theme rounded-lg p-1 gap-2 cursor-pointer">
           <svg
